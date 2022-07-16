@@ -1,0 +1,15 @@
+<body>
+  <button data-action="digit" class="button" id="1">1</button>
+  <button data-action="digit" class="button" id="2">2</button>
+  <button data-action="digit" class="button" id="3">3</button>
+</body>
+<script>
+  document.querySelectorAll("button").forEach((el) => {
+    el.addEventListener("click", () => {
+      digit_pressed(el.textContent);
+    });
+  });
+  function digit_pressed(digit) {
+    console.log("digit pressed: " + digit);
+  }
+</script>

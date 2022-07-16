@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <label>Enter You Name</label><br />
+    <input type="text" id="demo" class="key" />
+
+    <script>
+      const keybord = document.getElementById("demo");
+
+      keybord.addEventListener("keydown", myFunction);
+
+      function myFunction() {
+        document.getElementById(".key").style.backgroundColor = "red";
+      }
+    </script>
+  </body>
+</html>

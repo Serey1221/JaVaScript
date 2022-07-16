@@ -1,0 +1,81 @@
+.calculator {
+  border-radius: 10px;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15),
+    0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  margin-block-start: 2em;
+  max-inline-size: 22rem;
+  overflow: hidden;
+  color: hsl(202, 11%, 29%);
+}
+.calculator__output {
+  background: rgb(56, 54, 54);
+  font-size: 4.2rem;
+  padding-block-start: 2rem;
+  padding-block-end: 0.5rem;
+  padding-inline-end: 1.25rem;
+  text-align: end;
+  /* --css copy */
+  /* grid-column: 1 / -1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  word-wrap: break-word;
+  word-break: break-all; */
+}
+.previous-operand {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.5rem;
+}
+
+.current-operand {
+  color: white;
+  font-size: 2.5rem;
+}
+.data-result {
+  color: rgba(255, 255, 255, 0.75);
+  text-align: left;
+  padding-left: 20px;
+  font-size: 20px;
+  /* opacity: 0.3; */
+}
+.calculator__keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1px;
+  background: hsl(255, 100%, 100%);
+  padding: 0.5rem;
+}
+.calculator__key {
+  background: hsl(210, 25%, 95%);
+  border: none;
+  padding-block-start: 1rem;
+  padding-block-end: 1rem;
+  padding-inline-end: 1.25rem;
+  padding-inline-start: 1.25rem;
+  font-size: 1.5rem;
+  /* Playful Styles */
+  inline-size: 70px;
+  block-size: 70px;
+  margin: 0.25rem;
+  border-radius: 40px;
+}
+.calculator__key:active,
+.calculator__key:focus {
+  box-shadow: 0 0 8px 0 rgba(251, 245, 245, 0.3) inset;
+  outline: none;
+}
+.calculator__operator {
+  background: hsl(208, 25%, 86%);
+}
+.calculator__operator:active {
+  background: hsl(208, 24%, 80%);
+}
+.calculator__key--enter {
+  grid-column: 4 / 5;
+  grid-row: 2 / span 3;
+  background: hsl(357, 100%, 72%);
+  height: auto;
+}
